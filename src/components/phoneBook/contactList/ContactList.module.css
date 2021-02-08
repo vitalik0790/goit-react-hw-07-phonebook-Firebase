@@ -1,0 +1,36 @@
+.list {
+  max-width: 500px;
+}
+.listItem + .listItem {
+  margin-top: 10px;
+}
+.button {
+  margin-left: 20px;
+  background-color: inherit;
+  border-radius: 7px;
+  outline: none;
+}
+.button:active {
+  background-color: #a0c7f9;
+}
+.name {
+  font-weight: 500;
+}
+
+.enter {
+  transform: translateX(-100%);
+}
+
+.enterActive {
+  transition: all 250ms linear;
+  transform: translateX(0);
+}
+
+.exit {
+  transform: translateX(0);
+}
+
+.exitActive {
+  transition: all 250ms linear;
+  transform: translateX(-100%);
+}
