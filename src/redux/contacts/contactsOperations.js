@@ -9,7 +9,7 @@ const addContact = ({ name, number }) => async (dispatch) => {
     await axios
         .post(`${process.env.REACT_APP_BASE_URL}/contacts.json`, { name, number })
         .then(response => {
-            console.log(response)
+            // console.log(response)
             dispatch(contactsActions.addContactSuccess({ id: response.data.name, name, number }));
         })
         .catch(error => dispatch(contactsActions.addContactError(error)))
